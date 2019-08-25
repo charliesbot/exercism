@@ -1,6 +1,6 @@
 fn is_prime(n: u32) -> bool {
     let max = (n as f64).sqrt() as u32;
-    for value in 2..max + 1 {
+    for value in 2..=max {
         if n % value == 0 {
             return false;
         }
